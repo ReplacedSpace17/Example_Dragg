@@ -172,7 +172,7 @@ const App = () => {
       >
         {Object.entries(columns).map(([columnId, items]) => (
           <DroppableColumn key={columnId} id={columnId} items={items}>
-            <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            <Typography variant="h6" sx={{ marginBottom: 2, color: "#000" }}>
               {columnId === "todo"
                 ? "Por hacer"
                 : columnId === "doing"
